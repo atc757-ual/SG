@@ -27,9 +27,6 @@
       </thead>
       <tbody>
         <?php
-        echo getenv('MYSQL_HOST');
-        echo getenv('MYSQL_USER');
-        echo getenv('MYSQL_PASSWORD');
         $conexion = mysqli_connect(getenv('MYSQL_HOST'), getenv('MYSQL_USER'), getenv('MYSQL_PASSWORD'), "SG");
 
         $cadenaSQL = "select * from s_customer";
